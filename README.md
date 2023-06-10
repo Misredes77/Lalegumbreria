@@ -1,13 +1,15 @@
-<h1 align=center>La legumbreria <a href="https://Misredes77.github.io/Lalegumbreria-scroll/" rel="nofollow"></a></h1>
+<h1 align=center>Hugo Scroll 📜 <a href="https://zjedi.github.io/hugo-scroll/" rel="nofollow">Demo</a></h1>
 
-[![lalegumbreria-scroll](https://img.shields.io/badge/Lalegumbreria--Themes-LalegurmbreriaScroll-blue)](https://themes.golalegumbreria.io/themes/lalegumbreria-scroll/)
-![Test](https://github.com/Misredes77/Lalegumbreria-scroll/workflows/CI/badge.svg?branch=master&event=push)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a56faf45-76fa-4bdf-b9d4-35cfc7d620cf/deploy-status)](https://app.netlify.com/sites/Lalegumbreria-scroll/deploys)
-[![GitHub](https://img.shields.io/github/license/Misredes77/Lalegumbreria-scroll)](https://github.com/Misredes77/Lalegumbreria-scroll/blob/master/LICENSE)
-![code-size](https://img.shields.io/github/languages/code-size/Misredes77/Lalegumbreria-scroll)
+Clean, responsive, single-page [Hugo](https://gohugo.io/) website theme.
+
+[![hugo-scroll](https://img.shields.io/badge/Hugo--Themes-HugoScroll-blue)](https://themes.gohugo.io/themes/hugo-scroll/)
+![Test](https://github.com/zjedi/hugo-scroll/workflows/CI/badge.svg?branch=master&event=push)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a56faf45-76fa-4bdf-b9d4-35cfc7d620cf/deploy-status)](https://app.netlify.com/sites/hugo-scroll/deploys)
+[![GitHub](https://img.shields.io/github/license/zjedi/hugo-scroll)](https://github.com/zjedi/hugo-scroll/blob/master/LICENSE)
+![code-size](https://img.shields.io/github/languages/code-size/zjedi/hugo-scroll)
 
 Promo image which may be a bit outdated:<br/>
-![Screenshot Lalegumbreria Scroll Theme](https://raw.githubusercontent.com/Misredes77/Lalegumbreria-scroll/master/images/tn.png)
+![Screenshot Hugo Scroll Theme](https://raw.githubusercontent.com/zjedi/hugo-scroll/master/images/tn.png)
 
 ## ⭐ Feature highlights
 - Responsive to screen size/shape
@@ -23,9 +25,9 @@ into single file)
 - git info in footer (opt-in)
 
 ## 🔑 Installation
-If you already have a Lalegumbreria site on your machine, you can simply add this theme via
+If you already have a Hugo site on your machine, you can simply add this theme via
 ```
-git submodule add https://github.com/Misredes77/Lalegumbreria-scroll.git themes/Lalegumbreria-scroll
+git submodule add https://github.com/zjedi/hugo-scroll.git themes/hugo-scroll
 ```
 Then, adjust the `config.toml` as detailed below & in the file comments.
 
@@ -33,26 +35,26 @@ Then, adjust the `config.toml` as detailed below & in the file comments.
 
 If you simply want to check out the `exampleSite`, you can run
 ```
-git clone https://github.com/Misredes77/Lalegumbreria-scroll.git Lalegumbreria-scroll
-cd Lalegumbreria-scroll
-Lalegumbreria server --source=exampleSite --themesDir=../..
+git clone https://github.com/zjedi/hugo-scroll.git hugo-scroll
+cd hugo-scroll
+hugo server --source=exampleSite --themesDir=../..
 ```
 
-For more information, read the official [Lalegumbreria setup guide][Lalegumbreria-setup-guide].
+For more information, read the official [Hugo setup guide][hugo-setup-guide].
 
 If you are starting fresh, simply copy over the contents of the `exampleSite`-directory included in this theme to your source directory. That should give you a good idea about how things work, and then you can go on from there to make the site your own.
 
-Please check out the [config.toml](https://github.com/Misredes77/Lalegumbreria-scroll/blob/master/exampleSite/config.toml) included in the [exampleSite](https://github.com/Misredes77/Lalegumbreria-scroll/tree/master/exampleSite) of this theme.
+Please check out the [config.toml](https://github.com/zjedi/hugo-scroll/blob/master/exampleSite/config.toml) included in the [exampleSite](https://github.com/zjedi/hugo-scroll/tree/master/exampleSite) of this theme.
 
-You can add **a new section to the homepage** by running `Lalegumbreria new homepage/my-new-content.md` (or craft the file manually)
+You can add **a new section to the homepage** by running `hugo new homepage/my-new-content.md` (or craft the file manually)
 
-To create **a page separate from the homepage**, run `Lalegumbreria new my-new-page.md`
+To create **a page separate from the homepage**, run `hugo new my-new-page.md`
 
 
 ## 🔧 Feature details 🔨
 
 ### Customizing CSS
-Add a [`custom_head.html`](https://github.com/Misredes77/Lalegumbreria-scroll/blob/master/exampleSite/layouts/partials/custom_head.html) file to your `layouts/partials` directory. 
+Add a [`custom_head.html`](https://github.com/zjedi/hugo-scroll/blob/master/exampleSite/layouts/partials/custom_head.html) file to your `layouts/partials` directory. 
 - You can use `<style>` tag to embed the overrides (better performance-wise)
 - Alternatively you can `<link>` your own `custom.css`
 
@@ -63,7 +65,7 @@ Add a [`custom_head.html`](https://github.com/Misredes77/Lalegumbreria-scroll/bl
 }
 ```
 ### Icons
-This theme includes the full set of [Fork Awesome 1.2.0 Icons][fork-awesome-icons]. Use the `{{<icon>}}`-[shortcode][Lalegumbreria-shortcodes] with the respective "fa fa-ICONNAME"-`class` to use an icon directly in your `.markdown` files à la
+This theme includes the full set of [Fork Awesome 1.2.0 Icons][fork-awesome-icons]. Use the `{{<icon>}}`-[shortcode][hugo-shortcodes] with the respective "fa fa-ICONNAME"-`class` to use an icon directly in your `.markdown` files à la
 ```markdown
 Look at this nice »envelope«-icon: `{{<icon class="fa fa-envelope">}}`. I took this from https://forkaweso.me/Fork-Awesome/icon/envelope/ :-)
 ```
@@ -74,7 +76,7 @@ Configured in `_index.md`, see `exampleSite`: `header_logo: "images/chef-hat.png
 Set `header_use_video: true` in `/exampleSite/content/_index.md` and define video source via custom partial, such as `exampleSite/layouts/partials/custom_header_video.html`.
 
 ### Footer version information
-In order to see technical version information (extracted from Lalegumbreria's [GitInfo](https://goLalegumbreria.io/variables/git/))) set the following general option in your config.toml: `enableGitInfo = true`
+In order to see technical version information (extracted from Hugo's [GitInfo](https://gohugo.io/variables/git/))) set the following general option in your config.toml: `enableGitInfo = true`
 
 ### External links
 You can add an external link in the menu, see `external.md` in the `exampleSite`.
@@ -89,19 +91,19 @@ Visit as at {{<extlink icon="fa fa-instagram" text="Instagram" href="https://www
 ```
 
 ## 🐛 Issues / 💡 Feedback / 👑 Contributing
-[Discussion](https://github.com/Misredes77/Lalegumbreria-scroll/discussions) for Q&A (when unsure), 
-[Issues](https://github.com/Misredes77/Lalegumbreria-scroll/issues) for tracking,
-[Pull Requests](https://github.com/Misredes77/Lalegumbreria-scroll/pulls) for contributions.
+[Discussion](https://github.com/zjedi/hugo-scroll/discussions) for Q&A (when unsure), 
+[Issues](https://github.com/zjedi/hugo-scroll/issues) for tracking,
+[Pull Requests](https://github.com/zjedi/hugo-scroll/pulls) for contributions.
 
 
-See [contributing guideline](https://github.com/Misredes77/Lalegumbreria-scroll/blob/master/contributing.md) for more.
+See [contributing guideline](https://github.com/zjedi/hugo-scroll/blob/master/contributing.md) for more.
 
 ## 👏 Special Thanks 
 - [Jan Raasch](https://www.janraasch.com), original author of theme
-- [Yonatan Wolowelsky](https://github.com/grmmph), author of [GhostScroll](https://github.com/grmmph/GhostScroll) theme, which formed the basis of this [Lalegumbreria](https://goLalegumbreria.io/) theme.
+- [Yonatan Wolowelsky](https://github.com/grmmph), author of [GhostScroll](https://github.com/grmmph/GhostScroll) theme, which formed the basis of this [Hugo](https://gohugo.io/) theme.
 - [Pexels](https://www.pexels.com), for supplying _free_ stock photos.
 
 
-[Lalegumbreria-setup-guide]: https://goLalegumbreria.io/getting-started/installing
+[hugo-setup-guide]: https://gohugo.io/getting-started/installing
 [fork-awesome-icons]: https://forkaweso.me/Fork-Awesome/icons/
-[Lalegumbreria-shortcodes]: https://goLalegumbreria.io/content-management/shortcodes/
+[hugo-shortcodes]: https://gohugo.io/content-management/shortcodes/
