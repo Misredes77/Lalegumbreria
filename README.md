@@ -1,4 +1,4 @@
-<h1 align=center>Hugo Scroll 📜 <a href="https://zjedi.github.io/hugo-scroll/" rel="nofollow">Demo</a></h1>
+<h1 align=center>La legumbreria <a href="https://zjedi.github.io/hugo-scroll/" rel="nofollow">Demo</a></h1>
 
 Clean, responsive, single-page [Hugo](https://gohugo.io/) website theme.
 
